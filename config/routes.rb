@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :game_comments
   resources :game_likes
   resources :articles
   resources :games
