@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# API
+gem "grape", "1.6.2"
+
+# Engine
+gem "puma", "5.6.4"
+
+# Database
+gem "sequel", "5.55.0"
+gem "sequel_pg", "1.15.0", require: "sequel"
+
+# Loading
+gem "zeitwerk", "2.5.4"
