@@ -6,7 +6,7 @@ require "boot"
 
 Bundler.require :default, ENV['RACK_ENV']
 
-Sequel::Model.db = Sequel.connect(adapter: :postgres, database: "ludotopia", host: ENV["PGHOST"], user: ENV["PGUSER"], password: ENV["PGPASSWORD"])
+Sequel::Model.db = Sequel.connect(adapter: :postgres, database: ENV["PGDB"], host: ENV["PGHOST"], user: ENV["PGUSER"], password: ENV["PGPASSWORD"])
 
 module Ludotopia
 end
